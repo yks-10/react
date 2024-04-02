@@ -1,10 +1,16 @@
 // import logo from './logo.svg';
 // import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/header.js'
+import {Header, Header1} from './components/header.js' // arrow function used \
+import Welcome from './components/welcome.js' 
 // import Layout from './components/layout.js';
 import Footer from './components/footer.js';
 import BodyUseState from './components/usestate.js'
 import BodyUseEffect from './components/useeffect.js';
+import Message from './components/message.js'
+import Counter from './components/counter.js';
+import FunctionClick from './components/function.js';
+import Classclick from './components/classclick.js';
+import Eventbind from './components/eventbind.js';
 import './App.css';
 
 function App() {
@@ -19,7 +25,16 @@ function App() {
     //     </BrowserRouter>
 
     <div className="App">
-      <Header />
+      <Header/>
+      <Header1 name="YOGESH" heroname="Paul Walker">
+        <p>This world</p>
+      </Header1>
+      <Welcome name="Loki" heroname="Asgard" />
+      <Message/>
+      <Counter/>
+      <FunctionClick/>
+      <Classclick/>
+      <Eventbind/>
       <BodyUseState initialCount={10}/>
       <BodyUseEffect/>
       <Footer/>

@@ -15,6 +15,7 @@ const BodyUseState = ({initialCount}) =>{
     }
     return (
         <div>
+                    <br></br>
             <button onClick={decrement}> -</button>
             <span>{count}</span>
             <button onClick={increment}>+</button>
